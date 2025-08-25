@@ -46,10 +46,6 @@ repoquery --requires --resolve cri-tools
 cd /home/${USER}/air-gap-k8-setup/kubernetes_rpms
 sudo yum localinstall -y *.rpm --disablerepo="*" --skip-broken
 
-# Document link: https://github.com/containerd/containerd/blob/main/docs/getting-started.md
-# link: https://github.com/containerd/containerd/releases
-#reference document link: https://unix.stackexchange.com/questions/542343/docker-service-how-to-edit-systemd-service-file
-
 # Containerd and Docker setup
 cd /home/${USER}/air-gap-k8-setup/containerd_setup/
 wget https://raw.githubusercontent.com/containerd/containerd/main/containerd.service
